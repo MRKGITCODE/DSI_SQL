@@ -13,6 +13,11 @@ Steps to complete this part of the homework:
 	- This will be wherever you cloned the GH Repo (within the **SQL** folder)
 	- ![db_browser_for_sqlite_choose_db.png](./images/01_db_browser_for_sqlite_choose_db.png)
 
+	
+	![alt text](<Screenshot assignment 1 _1 -1.png>)
+
+
+
 #### 2) Configure your windows
 By default, DB Browser for SQLite has three windows, with four tabs in the main window and three tabs in the bottom right window
 - Window 1: Main Window (Centre)
@@ -23,6 +28,9 @@ By default, DB Browser for SQLite has three windows, with four tabs in the main 
 
 Your screen should look like this (or very similar)
 ![db_browser_for_sqlite.png](./images/01_db_browser_for_sqlite.png)
+
+
+[alt text](<Screenshot assignment 1_2 .png>)
 
 #### 3) The farmersmarket.db
 There are 10 tables in the Main Window:
@@ -36,6 +44,9 @@ There are 10 tables in the Main Window:
 8) vendor_booth_assignments
 9) vendor_inventory
 10) zip_data
+
+
+![alt text](<Screenshot assignment 1 _1 .png>)
 
 Switch to the Browse Data tab, booth is selected by default
  ![01_the_browse_data_tab.png](./images/01_the_browse_data_tab.png) 
@@ -68,6 +79,26 @@ A logical data model must contain:
 - relationship type
 
 Please do not pick the exact same tables that I have already diagramed. For example, you shouldn't diagram the relationship between `product` and `product_category`, but you could diagram `product` and `customer_purchases`.
+
+Table 1: customer
+customer_id (Primary Key, Integer)
+first_name (String)
+last_name (String)
+email (String)
+phone_number (String)
+address (String)
+city (String)
+country (String)
+Table 2: order
+order_id (Primary Key, Integer)
+order_date (Date)
+total_amount (Decimal)
+payment_status (String)
+shipping_address (String)
+customer_id (Foreign Key, Integer)
+
+pic as :  
+![alt text](<Screenshot assignment 1_3.png>)
 
 **A few hints**:
 - You will need to use the Browse Data tab in the main window to figure out the relationship types.
